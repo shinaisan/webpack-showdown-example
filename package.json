@@ -1,0 +1,14 @@
+{
+  "name": "webpack-index-html-example",
+  "version": "1.0.0",
+  "description": "Example of webpack to build an empty webpage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "shinaisan@users.noreply.github.com",
+  "license": "ISC"
+}
