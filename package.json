@@ -1,7 +1,7 @@
 {
-  "name": "webpack-index-html-example",
+  "name": "webpack-showdown-example",
   "version": "1.0.0",
-  "description": "Example of webpack to build an empty webpage.",
+  "description": "Example of webpack and showdown.",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
