@@ -26,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.txt$/,
+        test: /\.(txt|md)$/,
         use: 'raw-loader'
       },
       { // webpack --module-bind 'css=style-loader!css-loader'
