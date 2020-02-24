@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Installed via npm
+const { WebpackPluginServe } = require('webpack-plugin-serve');
 const webpack = require('webpack'); // To access built-in plugins
 const path = require('path');
 
@@ -61,17 +62,17 @@ module.exports = {
     maxAssetSize: 1000000
   },
   devtool: "source-map",
-  serve: {
-    host: HOST,
-    port: 3000,
-    content: paths.dist,
-    logLevel: 'debug'
-  },
   stats: "verbose",
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.join(paths.src, 'template.html')
+    }),
+    new WebpackPluginServe({
+      host: HOST,
+      port: 3000,
+      static: paths.dist,
+      log: { level: 'debug' }
     })
   ],
   node: {
